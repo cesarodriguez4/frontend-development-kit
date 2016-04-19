@@ -1,0 +1,7 @@
+{
+  "name": "frontend-dev",
+  "version": "0.0.1",
+  "description": "A tool for frontend developers using jade, sass and other tools",
+  "author": "Moises Morillo",
+  "license": "MIT"
+}
