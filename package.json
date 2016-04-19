@@ -3,5 +3,16 @@
   "version": "0.0.1",
   "description": "A tool for frontend developers using jade, sass and other tools",
   "author": "Moises Morillo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "require-dir": "^0.3.0"
+  }
 }
