@@ -1,1 +1,3 @@
-require('require-dir')('./gulp');
+'use strict';
+
+require('require-dir')('./tasks');

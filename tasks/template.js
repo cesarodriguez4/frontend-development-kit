@@ -1,6 +1,8 @@
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
+'use strict';
+
+var gulp = require('gulp'),
+  $ = require('gulp-load-plugins')(),
+  browserSync = require('browser-sync');
 
 gulp.task('template', function() {
   return gulp.src('./app/views/*.jade')

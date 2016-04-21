@@ -1,6 +1,8 @@
-var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
+'use strict';
+
+var gulp = require('gulp'),
+  $ = require('gulp-load-plugins')(),
+  browserSync = require('browser-sync');
 
 gulp.task('styles', function() {
   return gulp.src('./app/**/*.scss')
@@ -12,7 +14,7 @@ gulp.task('styles', function() {
     }))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
     }).on('error', $.sass.logError))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/'))
