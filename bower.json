@@ -1,0 +1,20 @@
+{
+  "name": "frontend-dev",
+  "description": "A tool for frontend developers using jade, sass and other tools",
+  "main": "",
+  "authors": [
+    "Moises Morillo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/moisesmorillo/frontend-development-kit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+  }
+}

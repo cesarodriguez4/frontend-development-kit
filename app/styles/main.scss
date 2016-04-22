@@ -1,4 +1,9 @@
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+
 body{
-  background-color: #244970;
-  color: #FAE52A;
+  background-color: #433C3C;
+  padding:{
+    top: 20vh;
+    bottom: 20vh;
+  }
 }
