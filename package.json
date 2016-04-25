@@ -9,11 +9,14 @@
     "browser-sync": "^2.12.3",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
+    "gulp-bootlint": "^0.7.2",
+    "gulp-htmlhint": "^0.3.1",
     "gulp-jade": "^1.1.0",
     "gulp-load-plugins": "^1.2.2",
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "htmlhint-stylish": "^1.0.3",
     "node-notifier": "^4.5.0",
     "require-dir": "^0.3.0"
   }

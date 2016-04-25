@@ -12,7 +12,12 @@ gulp.task('template', function() {
         this.emit('end');
       }
     }))
-    .pipe($.jade())
+    .pipe($.jade({
+      pretty: true
+    }))
+    .pipe($.htmlhint('.htmlhintrc'))
+    .pipe($.htmlhint.reporter('htmlhint-stylish'))
+    .pipe($.bootlint())
     .pipe(gulp.dest('.tmp/'))
     .pipe(browserSync.reload({
       stream: true
