@@ -16,6 +16,9 @@ gulp.task('styles', function() {
     .pipe($.sass({
       outputStyle: 'expanded'
     }).on('error', $.sass.logError))
+    .pipe($.autoprefixer({
+      browsers: ['last 2 versions']
+    }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/'))
     .pipe(browserSync.reload({
