@@ -24,5 +24,8 @@ gulp.task('build:prepareData', ['template', 'styles', 'scripts'], function() {
     }))
     .pipe($.if('*.html', $.useref()))
     .pipe($.if('**/*.js', $.uglify()))
+    .pipe($.if('**/*.html', $.htmlmin({
+      collapseWhitespace: true
+    })))
     .pipe(gulp.dest('dist'));
 });
