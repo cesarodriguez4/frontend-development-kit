@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 html(lang="en")
-head
-  meta(charset="UTF-8")
-  title Frontend development kit
-  link(rel="stylesheet", href="/styles/main.css")
-body
-  .container-fluid
-    .jumbotron
-      .text-center
-        h1 Frontend Development Kit
-        p Hello World!
-        p
-          a.btn.btn-warning.btn-lg(href='#', role='button') Start to code!
-  script(src="/bower_components/jquery/dist/jquery.js")
-  script(src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js")
+  head
+    meta(charset="UTF-8")
+    title Frontend development kit
+    link(rel="stylesheet", href="styles/main.css")
+  body
+    .container-fluid
+      .jumbotron
+        .text-center
+          h1 Frontend Development Kit
+          p Hello World!
+          p
+            a.btn.btn-warning.btn-lg(href='#', role='button') Start to code!
+    // build:js scripts/plugins.min.js
+    script(src="../bower_components/jquery/dist/jquery.js")
+    script(src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js")
+    // endbuild
+    script(src="scripts/main.js")

@@ -8,10 +8,7 @@ var gulp = require('gulp'),
 gulp.task('serve', ['clean', 'template', 'styles', 'watch'], function() {
   browserSync.init({
     server: {
-      baseDir: ['.tmp', 'app'],
-      routes: {
-        '/bower_components': 'bower_components'
-      }
+      baseDir: ['.tmp', 'app', './']
     }
   });
   notifier.notify({
