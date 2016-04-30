@@ -1,10 +1,11 @@
 # Frontend Developmet Kit (fdk)
 
-- Clone it 
+- Clone it
 ```bash
-git@github.com:moisesmorillo/frontend-development-kit.git 
+
+git@github.com:moisesmorillo/frontend-development-kit.git frontend
+
 ```
-frontend
 
 - Install dependencies
 ```bash
@@ -15,7 +16,7 @@ npm install && bower install
 
 - Start to development
 
-```bash 
+```bash
 
 gulp serve
 
@@ -30,4 +31,4 @@ gulp build
 
 ```
 
-# Licence MIT 
+# Licence MIT
