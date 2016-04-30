@@ -1,6 +1,9 @@
 # Frontend Developmet Kit (fdk)
 
-- Clone it git@github.com:moisesmorillo/frontend-development-kit.git 
+- Clone it 
+```bash
+git@github.com:moisesmorillo/frontend-development-kit.git 
+```
 frontend
 
 - Install dependencies
