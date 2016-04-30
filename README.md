@@ -1,4 +1,4 @@
-# Frontend Developmet Kit (fdk)
+# Frontend Development Kit (fdk)
 
 - Clone it
 ```bash
