@@ -1,4 +1,7 @@
+'use strict';
+
 var gulp = require('gulp'),
+  config = require('../config.js'),
   del = require('del'),
   runSequence = require('run-sequence'),
   notifier = require('node-notifier'),
@@ -17,10 +20,7 @@ gulp.task('build', function() {
 gulp.task('build:prepareData', ['template', 'styles', 'scripts'], function() {
   return gulp.src('.tmp/**')
     .pipe($.plumber({
-      handleError: function(err) {
-        console.log(err);
-        this.emit('end');
-      }
+      handleError: config.plumber.handleError
     }))
     .pipe($.if('*.html', $.useref()))
     .pipe($.if('**/*.js', $.uglify()))

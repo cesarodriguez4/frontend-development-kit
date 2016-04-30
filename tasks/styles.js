@@ -1,16 +1,14 @@
 'use strict';
 
 var gulp = require('gulp'),
+  config = require('../config.js'),
   $ = require('gulp-load-plugins')(),
   browserSync = require('browser-sync');
 
 gulp.task('styles', function() {
   return gulp.src('./app/**/*.scss')
     .pipe($.plumber({
-      handleError: function(err) {
-        console.log(err);
-        this.emit('end');
-      }
+      handleError: config.plumber.handleError
     }))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
