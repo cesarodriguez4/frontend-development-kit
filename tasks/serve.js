@@ -5,7 +5,7 @@ var gulp = require('gulp'),
   $ = require('gulp-load-plugins')(),
   browserSync = require('browser-sync').create();
 
-gulp.task('serve', ['clean', 'template', 'styles', 'watch'], function() {
+gulp.task('serve', ['styles', 'template', 'watch'], function() {
   browserSync.init({
     server: {
       baseDir: ['.tmp', 'app', './']
