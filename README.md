@@ -1,4 +1,4 @@
-*Frontend Developmet Kit (fdk)"
+*Frontend Developmet Kit (fdk)"*
 
 - Clone it git@github.com:moisesmorillo/frontend-development-kit.git 
 frontend
@@ -27,4 +27,4 @@ gulp build
 
 ```
 
-** Licence MIT
+** Licence MIT **
