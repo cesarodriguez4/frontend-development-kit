@@ -10,8 +10,12 @@ gulp.task('scripts', ['eslint'], function() {
 });
 
 gulp.task('eslint', function() {
-  return gulp.src('./app/scripts/*.js')
-    .pipe($.eslint())
-    .pipe($.eslint.format())
+  return gulp.src('./app/**/*.js')
+    .pipe($.eslint({
+      rules: {
+        'strict': 2
+      }
+    }))
+    .pipe($.eslint.formatEach('stylish', process.stderr))
     .pipe($.eslint.failAfterError());
 });
