@@ -32,3 +32,8 @@ gulp build
 ```
 
 # Licence MIT
+
+#TODO
+
+* Sass linter and minify
+* Images minify

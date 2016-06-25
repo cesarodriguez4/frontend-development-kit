@@ -15,5 +15,5 @@ gulp.task('serve', ['styles', 'template', 'watch'], function() {
     title: 'Frontend Development Kit',
     message: 'Server started'
   })
-  gulp.watch(['.tmp/**/*.html', '.tmp/**/*.css']).on('change', browserSync.reload);
+  gulp.watch(['.tmp/**/*.html', '.tmp/**/*.css', '.tmp/**/*.js']).on('change', browserSync.reload);
 });
