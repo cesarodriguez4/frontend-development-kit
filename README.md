@@ -3,7 +3,8 @@
 - Clone it
 ```bash
 
-git@github.com:moisesmorillo/frontend-development-kit.git frontend
+git clone git@github.com:moisesmorillo/frontend-development-kit.git 
+frontend
 
 ```
 
