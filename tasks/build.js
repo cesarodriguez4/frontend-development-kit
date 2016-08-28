@@ -23,6 +23,7 @@ gulp.task('build:prepareData', ['template', 'styles', 'scripts'], function() {
       handleError: config.plumber.handleError
     }))
     .pipe($.if('*.html', $.useref()))
+    .pipe($.if('**/*.css', $.cleanCss()))
     .pipe($.if('**/*.js', $.uglify()))
     .pipe($.if('**/*.html', $.htmlmin({
       collapseWhitespace: true
