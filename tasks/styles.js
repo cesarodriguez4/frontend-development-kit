@@ -6,7 +6,7 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync');
 
 gulp.task('styles', function() {
-  return gulp.src('app/**/*.scss')
+  return gulp.src(['!app/**/_*.scss','app/**/*.scss'])
     .pipe($.plumber({
       handleError: config.plumber.handleError
     }))
