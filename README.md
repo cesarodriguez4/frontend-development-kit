@@ -3,7 +3,7 @@
 - Clone it
 ```bash
 
-git clone git@github.com:moisesmorillo/frontend-development-kit.git 
+git clone git@github.com:moisesmorillo/frontend-development-kit.git
 frontend
 
 ```
@@ -36,5 +36,5 @@ gulp build
 
 #TODO
 
-* Sass linter and minify
+* Sass linter
 * Images minify
