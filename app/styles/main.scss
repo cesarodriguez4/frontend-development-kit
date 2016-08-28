@@ -1,9 +1,4 @@
-@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap';
+/* CSS assets, only imports, no code here */
 
-body{
-  background-color: #433C3C;
-  padding:{
-    top: 20vh;
-    bottom: 20vh;
-  }
-}
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
+@import './_styles';
