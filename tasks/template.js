@@ -6,11 +6,11 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync');
 
 gulp.task('template', function() {
-  return gulp.src('./app/views/*.jade')
+  return gulp.src('./app/views/*.pug')
     .pipe($.plumber({
       handleError: config.plumber.handleError
     }))
-    .pipe($.jade({
+    .pipe($.pug({
       pretty: true
     }))
     .pipe($.htmlhint('.htmlhintrc'))
