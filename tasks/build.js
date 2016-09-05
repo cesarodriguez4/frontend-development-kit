@@ -17,7 +17,7 @@ gulp.task('build', function() {
   });
 });
 
-gulp.task('build:prepareData', ['template', 'styles', 'scripts'], function() {
+gulp.task('build:prepareData', ['template', 'styles', 'scripts', 'images'], function() {
   return gulp.src('.tmp/**')
     .pipe($.plumber({
       handleError: config.plumber.handleError

@@ -5,6 +5,6 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function() {
   gulp.watch('./app/styles/*.scss', ['styles']);
-  gulp.watch('./app/**/*.jade', ['template']);
+  gulp.watch('./app/**/*.pug', ['template']);
   gulp.watch('./app/scripts/*.js', ['scripts'])
 });
