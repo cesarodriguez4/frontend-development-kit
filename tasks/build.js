@@ -8,7 +8,7 @@ var gulp = require('gulp'),
   $ = require('gulp-load-plugins')();
 
 gulp.task('build', function() {
-  runSequence('build:prepareData', function() {
+  runSequence('build:prepareData', 'copy', function() {
     del('.tmp');
     notifier.notify({
       title: 'Frontend Development Kit',
@@ -17,7 +17,7 @@ gulp.task('build', function() {
   });
 });
 
-gulp.task('build:prepareData', ['template', 'styles', 'scripts', 'images'], function() {
+gulp.task('build:prepareData', ['template', 'styles', 'scripts'], function() {
   return gulp.src('.tmp/**')
     .pipe($.plumber({
       handleError: config.plumber.handleError

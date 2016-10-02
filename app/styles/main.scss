@@ -1,4 +1,7 @@
+/* Fix bootstrap font */
+$icon-font-path: "../../node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+
 /* CSS assets, only imports, no code here */
 
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap';
-@import './_styles';
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "./_styles";
